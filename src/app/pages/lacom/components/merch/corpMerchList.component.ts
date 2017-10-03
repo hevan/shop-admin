@@ -7,14 +7,14 @@ import {Component,OnInit,Input,ViewContainerRef} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 import { NgbModal,NgbDateStruct,NgbDateParserFormatter} from '@ng-bootstrap/ng-bootstrap';
 
 import { Keys } from '../../../../services/models/env';
-import {CorpService} from "../../../../services/corp/corp.service";
-import {PageDataModel} from "../../../../services/models/page.model";
-import {CategoryService} from "../../../../services/blog/category.service";
-import {BusiTypeService} from "../../../../services/corp/busiType.service";
+import {CorpService} from '../../../../services/corp/corp.service';
+import {PageDataModel} from '../../../../services/models/page.model';
+import {CategoryService} from '../../../../services/blog/category.service';
+import {BusiTypeService} from '../../../../services/corp/busiType.service';
 
 
 @Component({

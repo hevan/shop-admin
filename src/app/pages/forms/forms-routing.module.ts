@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { FormsComponent } from './forms.component';
 import { FormInputsComponent } from './form-inputs/form-inputs.component';
 import { FormLayoutsComponent } from './form-layouts/form-layouts.component';
-import {MyTablesLayoutsComponent} from "./tables-layouts/tables-layouts.component";
+import {MyTablesLayoutsComponent} from './tables-layouts/tables-layouts.component';
 
 const routes: Routes = [{
   path: '',

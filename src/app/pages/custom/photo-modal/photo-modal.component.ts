@@ -1,8 +1,8 @@
 import { Component, EventEmitter} from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { UploadOutput, UploaderOptions,UploadInput, UploadFile, humanizeBytes } from 'ngx-uploader';
-import {Keys} from "../../../services/models/env";
-import {AuthService} from "../../../services/auth.service";
+import {Keys} from '../../../services/models/env';
+import {AuthService} from '../../../services/auth.service';
 
 
 @Component({

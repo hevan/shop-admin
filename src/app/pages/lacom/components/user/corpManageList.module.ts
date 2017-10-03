@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {CorpManageListComponent} from "./corpManageList.component";
+import {CorpManageListComponent} from './corpManageList.component';
 
 import { NgbModalModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';

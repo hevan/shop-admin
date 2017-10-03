@@ -2,16 +2,16 @@ import {Component,OnInit,Input} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { Keys } from '../../../services/models/env';
-import {PageDataModel} from "../../../services/models/page.model";
-import {ProductCategoryService} from "../../../services/merch/prodcutCategory.service";
-import {SpotService} from "../../../services/device/spot.service";
-import {SpotChannelService} from "../../../services/device/spotChannel.service";
-import {SpotChannelEditComponent} from "./spotChannelEdit.component";
+import {PageDataModel} from '../../../services/models/page.model';
+import {ProductCategoryService} from '../../../services/merch/prodcutCategory.service';
+import {SpotService} from '../../../services/device/spot.service';
+import {SpotChannelService} from '../../../services/device/spotChannel.service';
+import {SpotChannelEditComponent} from './spotChannelEdit.component';
 
 @Component({
   selector: 'nx-spot-channel-query',

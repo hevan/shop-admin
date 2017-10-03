@@ -6,12 +6,12 @@ import {Component,OnInit} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { Keys } from '../../../../services/models/env';
 import { UserService } from '../../../../services/user.service';
-import {AuthorityService} from "../../../../services/check/authority.service";
-import {ModuleService} from "../../../../services/check/module.service";
+import {AuthorityService} from '../../../../services/check/authority.service';
+import {ModuleService} from '../../../../services/check/module.service';
 
 
 @Component({
@@ -58,7 +58,7 @@ export class ModuleEdit implements OnInit{
 
 
     //直接获取参数
-    this.curId = this.acRoute.snapshot.queryParams["paramId"];
+    this.curId = this.acRoute.snapshot.queryParams['paramId'];
 
 
   }

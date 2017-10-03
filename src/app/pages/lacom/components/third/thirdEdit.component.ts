@@ -6,10 +6,10 @@ import {Component,OnInit} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { Keys } from '../../../../services/models/env';
-import {SysThirdService} from "../../../../services/third/third.service";
+import {SysThirdService} from '../../../../services/third/third.service';
 
 
 @Component({
@@ -83,8 +83,8 @@ export class SysThirdEdit implements OnInit {
     this.callbackUrl = this.thirdForm.controls['callbackUrl'];
 
     //直接获取参数
-    this.curId = this.acRoute.snapshot.queryParams["paramId"];
-    this.dispatchCorpId = this.acRoute.snapshot.queryParams["dispatchedCorpId"];
+    this.curId = this.acRoute.snapshot.queryParams['paramId'];
+    this.dispatchCorpId = this.acRoute.snapshot.queryParams['dispatchedCorpId'];
   }
 
   public ngOnInit():void {

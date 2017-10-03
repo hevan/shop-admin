@@ -6,13 +6,13 @@ import {Component,OnInit} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 
 import { Keys } from '../../../../services/models/env';
 import { UserService } from '../../../../services/user.service';
-import {AuthorityService} from "../../../../services/check/authority.service";
-import {CorpService} from "../../../../services/corp/corp.service";
+import {AuthorityService} from '../../../../services/check/authority.service';
+import {CorpService} from '../../../../services/corp/corp.service';
 
 
 @Component({
@@ -56,11 +56,11 @@ export class UserEdit implements OnInit{
     this.password = this.searchForm.controls['password'];
 
     //直接获取参数
-    this.curId = this.acRoute.snapshot.queryParams["paramId"];
+    this.curId = this.acRoute.snapshot.queryParams['paramId'];
 
-    this.dispatchedCorpId = this.acRoute.snapshot.queryParams["dispatchedCorpId"];
+    this.dispatchedCorpId = this.acRoute.snapshot.queryParams['dispatchedCorpId'];
 
-    this.backAction = this.acRoute.snapshot.queryParams["backAction"];
+    this.backAction = this.acRoute.snapshot.queryParams['backAction'];
 
   }
 

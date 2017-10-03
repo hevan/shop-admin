@@ -2,12 +2,12 @@ import {Component,OnInit} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { Keys } from '../../../services/models/env';
-import {PageDataModel} from "../../../services/models/page.model";
-import {ProductCategoryService} from "../../../services/merch/prodcutCategory.service";
-import {SpotStockService} from "../../../services/device/spotStock.service";
+import {PageDataModel} from '../../../services/models/page.model';
+import {ProductCategoryService} from '../../../services/merch/prodcutCategory.service';
+import {SpotStockService} from '../../../services/device/spotStock.service';
 
 @Component({
   selector: 'nx-spot-stock-query',

@@ -6,11 +6,11 @@ import {Component,OnInit} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { Keys } from '../../../services/models/env';
-import {ProductCategoryService} from "../../../services/merch/prodcutCategory.service";
-import {SpotService} from "../../../services/device/spot.service";
+import {ProductCategoryService} from '../../../services/merch/prodcutCategory.service';
+import {SpotService} from '../../../services/device/spot.service';
 
 
 @Component({
@@ -28,7 +28,7 @@ export class SpotView implements OnInit{
 
 
     //直接获取参数
-    this.curId = this.acRoute.snapshot.queryParams["paramId"];
+    this.curId = this.acRoute.snapshot.queryParams['paramId'];
   }
 
   public ngOnInit():void {

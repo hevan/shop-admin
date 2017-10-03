@@ -3,7 +3,7 @@
  */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {PhotoModalComponent} from "./photo-modal.component";
+import {PhotoModalComponent} from './photo-modal.component';
 import { NgUploaderModule } from 'ngx-uploader';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 

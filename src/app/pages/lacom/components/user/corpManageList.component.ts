@@ -6,13 +6,13 @@ import {Component,OnInit,Input} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { Keys } from '../../../../services/models/env';
 import { UserService } from '../../../../services/user.service';
-import {PageDataModel} from "../../../../services/models/page.model";
-import {AuthorityService} from "../../../../services/check/authority.service";
-import {CorpManageService} from "../../../../services/corp/corpManage.service";
+import {PageDataModel} from '../../../../services/models/page.model';
+import {AuthorityService} from '../../../../services/check/authority.service';
+import {CorpManageService} from '../../../../services/corp/corpManage.service';
 
 @Component({
   selector: 'la-corp-manage-list',

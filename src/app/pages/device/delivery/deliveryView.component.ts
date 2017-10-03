@@ -2,12 +2,12 @@ import {Component,OnInit} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { Keys } from '../../../services/models/env';
-import {PageDataModel} from "../../../services/models/page.model";
+import {PageDataModel} from '../../../services/models/page.model';
 
-import {SpotDeliveryService} from "../../../services/device/spotDelivery.service";
+import {SpotDeliveryService} from '../../../services/device/spotDelivery.service';
 
 @Component({
   selector: 'nx-delivery-view',
@@ -21,7 +21,7 @@ export class DeliveryView implements OnInit{
 
   public constructor(fb:FormBuilder,private acRoute:ActivatedRoute,private router: Router, private spotDeliveryService:SpotDeliveryService) {
 
-    this.curId = this.acRoute.snapshot.queryParams["paramId"];
+    this.curId = this.acRoute.snapshot.queryParams['paramId'];
 
 
   }

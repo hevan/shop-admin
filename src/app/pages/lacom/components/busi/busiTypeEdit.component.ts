@@ -6,11 +6,11 @@ import {Component,OnInit} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { Keys } from '../../../../services/models/env';
-import {CategoryService} from "../../../../services/blog/category.service";
-import {BusiTypeService} from "../../../../services/corp/busiType.service";
+import {CategoryService} from '../../../../services/blog/category.service';
+import {BusiTypeService} from '../../../../services/corp/busiType.service';
 
 
 @Component({
@@ -49,7 +49,7 @@ export class BusiTypeEdit implements OnInit{
     this.menuOrder = this.categoryForm.controls['menuOrder'];
 
     //直接获取参数
-    this.curId = this.acRoute.snapshot.queryParams["paramId"];
+    this.curId = this.acRoute.snapshot.queryParams['paramId'];
   }
 
   public ngOnInit():void {

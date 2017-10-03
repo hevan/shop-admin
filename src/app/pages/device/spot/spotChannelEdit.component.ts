@@ -6,15 +6,15 @@ import {Component,OnInit,Input} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Keys } from '../../../services/models/env';
-import {ProductCategoryService} from "../../../services/merch/prodcutCategory.service";
-import {ProductService} from "../../../services/merch/prodcut.service";
-import {SpotStockService} from "../../../services/device/spotStock.service";
-import {SpotDeliveryProductService} from "../../../services/device/spotDeliveryProduct.service";
-import {SpotChannelService} from "../../../services/device/spotChannel.service";
+import {ProductCategoryService} from '../../../services/merch/prodcutCategory.service';
+import {ProductService} from '../../../services/merch/prodcut.service';
+import {SpotStockService} from '../../../services/device/spotStock.service';
+import {SpotDeliveryProductService} from '../../../services/device/spotDeliveryProduct.service';
+import {SpotChannelService} from '../../../services/device/spotChannel.service';
 
 
 @Component({

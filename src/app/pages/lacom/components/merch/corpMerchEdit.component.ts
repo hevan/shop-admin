@@ -8,12 +8,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { PageDataModel } from '../../../../services/models/page.model';
 import { Keys,Utils} from '../../../../services/models/env';
-import {CategoryService} from "../../../../services/blog/category.service";
-import {CorpService} from "../../../../services/corp/corp.service";
+import {CategoryService} from '../../../../services/blog/category.service';
+import {CorpService} from '../../../../services/corp/corp.service';
 
 import * as moment from 'moment';
 
@@ -22,8 +22,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import './ckeditor.loader';
 import 'ckeditor';
 
-import {AuthService} from "../../../../services/auth.service";
-import {BusiTypeService} from "../../../../services/corp/busiType.service";
+import {AuthService} from '../../../../services/auth.service';
+import {BusiTypeService} from '../../../../services/corp/busiType.service';
 
 @Component({
   selector: 'la-corp-merch-edit',
@@ -97,9 +97,9 @@ export class CorpMerchEdit {
 
 
     //直接获取参数
-    this.curId = this.route.snapshot.queryParams["paramId"];
+    this.curId = this.route.snapshot.queryParams['paramId'];
 
-    this.curCorpType = this.route.snapshot.queryParams["corpType"];
+    this.curCorpType = this.route.snapshot.queryParams['corpType'];
 
     //
     let paramType = new URLSearchParams();

@@ -6,15 +6,15 @@ import {Component,OnInit,ChangeDetectionStrategy,ViewChild} from '@angular/core'
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { Keys } from '../../../../services/models/env';
 import { UserService } from '../../../../services/user.service';
-import {PageDataModel} from "../../../../services/models/page.model";
-import {AuthorityService} from "../../../../services/check/authority.service";
-import {ModuleService} from "../../../../services/check/module.service";
-import {CorpService} from "../../../../services/corp/corp.service";
-import {CorpManageListComponent} from "../user/corpManageList.component";
+import {PageDataModel} from '../../../../services/models/page.model';
+import {AuthorityService} from '../../../../services/check/authority.service';
+import {ModuleService} from '../../../../services/check/module.service';
+import {CorpService} from '../../../../services/corp/corp.service';
+import {CorpManageListComponent} from '../user/corpManageList.component';
 
 
 @Component({
@@ -35,7 +35,7 @@ export class CorpMerchView implements OnInit{
   public constructor(fb:FormBuilder,private acRoute:ActivatedRoute,private router: Router,private corpService:CorpService) {
 
     //直接获取参数
-    this.curId = this.acRoute.snapshot.queryParams["paramId"];
+    this.curId = this.acRoute.snapshot.queryParams['paramId'];
 
 
   }

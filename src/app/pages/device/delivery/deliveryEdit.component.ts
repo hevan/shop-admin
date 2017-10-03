@@ -6,14 +6,14 @@ import {Component,OnInit} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { NgbModal,NgbDateStruct,NgbDateParserFormatter} from '@ng-bootstrap/ng-bootstrap';
 
 import { Keys,Utils } from '../../../services/models/env';
-import {ProductCategoryService} from "../../../services/merch/prodcutCategory.service";
-import {CorpService} from "../../../services/corp/corp.service";
-import {SpotDeliveryService} from "../../../services/device/spotDelivery.service";
+import {ProductCategoryService} from '../../../services/merch/prodcutCategory.service';
+import {CorpService} from '../../../services/corp/corp.service';
+import {SpotDeliveryService} from '../../../services/device/spotDelivery.service';
 
 
 @Component({
@@ -44,7 +44,7 @@ export class DeliveryEdit implements OnInit{
     this.corpId = this.editForm.controls['corpId'];
 
     //直接获取参数
-    this.curId = this.acRoute.snapshot.queryParams["paramId"];
+    this.curId = this.acRoute.snapshot.queryParams['paramId'];
   }
 
   public ngOnInit():void {

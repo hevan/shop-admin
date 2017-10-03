@@ -5,22 +5,22 @@ import {Component,Input,OnInit,ChangeDetectionStrategy} from '@angular/core';
 import { NgModule } from '@angular/core';
 import {FormGroup, AbstractControl, FormBuilder, Validators} from '@angular/forms';
 import { Router,ActivatedRoute } from '@angular/router';
-import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from "@angular/http";
+import {Response,Headers, Http,URLSearchParams,RequestOptionsArgs} from '@angular/http';
 
 import { Keys,Utils } from '../../../services/models/env';
 
 
 import { NgbModal,NgbDateStruct,NgbDateParserFormatter } from '@ng-bootstrap/ng-bootstrap';
-import {PhotoModalComponent} from "../../custom/photo-modal/photo-modal.component";
+import {PhotoModalComponent} from '../../custom/photo-modal/photo-modal.component';
 
 import * as moment from 'moment';
 import '../../lacom/components/merch/ckeditor.loader';
 import 'ckeditor';
 
-import {ProductService} from "../../../services/merch/prodcut.service";
-import {AuthService} from "../../../services/auth.service";
-import {ProductCategoryService} from "../../../services/merch/prodcutCategory.service";
-import {CorpService} from "../../../services/corp/corp.service";
+import {ProductService} from '../../../services/merch/prodcut.service';
+import {AuthService} from '../../../services/auth.service';
+import {ProductCategoryService} from '../../../services/merch/prodcutCategory.service';
+import {CorpService} from '../../../services/corp/corp.service';
 
 
 @Component({
@@ -86,9 +86,9 @@ export class ProductEdit {
 
 
     //直接获取参数
-    this.curId = this.route.snapshot.queryParams["paramId"];
+    this.curId = this.route.snapshot.queryParams['paramId'];
 
-    this.copyId = this.route.snapshot.queryParams["copyId"];
+    this.copyId = this.route.snapshot.queryParams['copyId'];
 
     let requestParam = new URLSearchParams();
     requestParam.set('code','pt');

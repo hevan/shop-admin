@@ -1,0 +1,108 @@
+<div class="widgets">
+  <div class="col-lg-12 col-sm-12 col-12">
+    <nb-card  >
+      <nb-card-body>
+        <div class="col-lg-12 col-sm-12 col-12" *ngIf="spot">
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label  class="control-label">编码</label>
+              <div class="input-group">
+                {{spot.spotNo}}
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label class="control-label">名称</label>
+              <div class="input-group">
+                {{spot.name}}
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="form-group">
+              <label  class="control-label">货道数</label>
+              <div class="input-group">
+                {{spot.channelCount}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label  class=" control-label">城市</label>
+              <div class="input-group">
+                {{spot.city}}
+              </div>
+            </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="control-label">详细地址</label>
+                <div class="input-group">
+                  {{spot.address}}
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label  class=" control-label">附近商圈</label>
+              <div class="input-group">
+                {{spot.district}}
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label  class="control-label">经度</label>
+              <div class="input-group">
+                {{spot.longitude}}
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label class="control-label">纬度</label>
+              <div class="input-group">
+                {{spot.latitude}}
+              </div>
+            </div>
+          </div>
+        </div>
+            <div class="form-group">
+              <div class="offset-sm-5">
+
+                <button type="button" (click)="toBack()" class="btn  btn-warning">返回</button>
+              </div>
+            </div>
+          </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-12">
+
+              <nb-tabset>
+                <nb-tab tabTitle="货道配置">
+
+                  <nx-spot-channel-query [spotId]="curId"></nx-spot-channel-query>
+
+                </nb-tab>
+
+                <nb-tab tabTitle="库存" *ngIf="spot" >
+
+                  <nx-spot-stock-detail [spotNo]="spot.spotNo" [deliveryId]="''"></nx-spot-stock-detail>
+
+                </nb-tab>
+              </nb-tabset>
+
+          </div>
+        </div>
+
+        </nb-card-body>
+    </nb-card>
+  </div>
+</div>

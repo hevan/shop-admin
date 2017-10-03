@@ -1,0 +1,139 @@
+
+  <div class="row">
+    <div class="col-lg-12 col-sm-12 col-12">
+      <form [formGroup]="productForm" (ngSubmit)="addProduct(productForm.value)" class="form-horizontal">
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="idcategory">所属分类</label>
+              <select [formControl]="category" id="idcategory" class="form-control" >
+                <option value="">请选择</option>
+                <option *ngFor="let item of listCategory" [value]="item.id">{{item.name}}</option>
+              </select>
+            </div>
+
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="idname">产品名</label>
+              <input type="text" [formControl]="name" class="form-control" id="idname">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="idCorpId">所属公司</label>
+              <select [formControl]="corpId" id="idCorpId" class="form-control" >
+                <option value="">请选择</option>
+                <option *ngFor="let item of listCorp" [value]="item.id">{{item.name}}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="idProductNo">编号</label>
+              <input type="text" [formControl]="productNo" class="form-control" id="idProductNo" >
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="form-group">
+
+                <label for="idImageUrl">图片</label>
+                <input type="text" [formControl]="imageUrl" class="form-control" id="idImageUrl" >
+              <button class="btn btn-warning" (click)="photoMainShow()">上传</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="idDescription">摘录</label>
+              <input type="text" [formControl]="description" class="form-control" id="idDescription" >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="idTag">标签</label>
+              <input type="text" [formControl]="tag" class="form-control" id="idTag" >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="idSpec">规格</label>
+              <input type="text" [formControl]="spec" class="form-control" id="idSpec" >
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="idoldPrice">原价</label>
+              <input type="text" [formControl]="fixPrice" class="form-control" id="idoldPrice" >
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="idPrice">销售价格</label>
+              <input  type="text" [formControl]="price" class="form-control" id="idPrice" >
+            </div>
+          </div>
+         <div class="col-sm-6">
+           <div class="form-group">
+
+             <label for="idstatus">状态</label>
+             <select [formControl]="status" id="idstatus" class="form-control" >
+               <option value="">请选择</option>
+               <option value="0">否</option>
+               <option value="1">是</option>
+             </select>
+           </div>
+         </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="offset-sm-6 col-sm-6">
+          <button type="button" (click)="addProduct(productForm.value)"  class="btn btn-warning" >保存</button>
+          <button type="button" (click)="toBack()"  class="btn btn-warning" >返回</button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 col-12">
+        <nb-tabset>
+          <nb-tab tabTitle="详情资料">
+
+            <div class="row">
+              <div class="col-md-12">
+                <nb-card  baCardClass="with-scroll">
+                  <ckeditor [(ngModel)]="ckeditorContent" [config]="ckconfig"></ckeditor>
+                </nb-card>
+              </div>
+            </div>
+
+          </nb-tab>
+          <nb-tab tabTitle="图片资源">
+
+              <nb-card>
+              <div class="row">
+                <div class="col-md-12">
+                  <photo-list [entityName]="'product'" [entityId]="curId"></photo-list>
+                </div>
+              </div>
+              </nb-card>
+
+          </nb-tab>
+
+        </nb-tabset>
+      </div>
+   </div>

@@ -12,3 +12,9 @@
   @include nb-theme-global();
   @include nb-auth-global();
 };
+
+
+.ngx-datatable.material {
+  box-shadow: none;
+  height: 80vh;
+}

@@ -1,0 +1,32 @@
+<div class="widgets">
+  <div class="row">
+    <div class="col-lg-12 col-sm-12 col-12">
+      <nb-card   *ngIf="module">
+        <nb-card-body>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group ">
+                <div class="input-group">
+                  中文名: <b class="background-color offset-1">{{module.name}}</b>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group ">
+                <div class="input-group">
+                  编号:<b class="background-color offset-1">{{module.code}}</b>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="offset-5 col-sm-6">
+              <button type="button" (click)="toBack()" class="btn btn-warning">返回</button>
+            </div>
+          </div>
+          </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+</div>

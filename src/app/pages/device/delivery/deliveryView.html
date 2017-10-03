@@ -1,0 +1,53 @@
+
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 col-12">
+      <nb-card  >
+        <nb-card-body>
+          <div class="row" *ngIf="spotDelivery">
+            <div class="col-4">
+              <div class="form-group">
+                <label >所属公司</label>
+                {{spotDelivery.corpName}}
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                <label >网点编号</label>
+                {{spotDelivery.spot.spotNo}} - {{spotDelivery.spot.name}}
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                <label >日期</label>
+                {{spotDelivery.createdDate}}
+              </div>
+            </div>
+          </div>
+          <div class="row">
+        <div class="offset-5">
+
+          <button type="button" (click)="toBack()"  class="btn btn-primary btn-sm" >返回</button>
+        </div>
+      </div>
+
+          <nb-tabset>
+            <nb-tab tabTitle="配货情况">
+
+              <nx-delivery-product-detail [deliveryId]="curId" [startDate]="''"></nx-delivery-product-detail>
+
+            </nb-tab>
+
+            <nb-tab tabTitle="库存" *ngIf="spotDelivery" >
+
+              <nx-spot-stock-detail [spotNo]="spotDelivery.spot.spotNo" [deliveryId]="curId"></nx-spot-stock-detail>
+
+            </nb-tab>
+          </nb-tabset>
+          </nb-card-body>
+        </nb-card>
+        </div>
+  </div>
+
+
+
+

@@ -16,7 +16,20 @@ const routes: Routes = [{
   }, {
     path: 'forms',
     loadChildren: './forms/forms.module#FormsModule',
-  }, {
+  },
+    {
+      path: 'lacom',
+      loadChildren: './lacom/lacom.module#LaComModule',
+    },
+    {
+      path: 'product',
+      loadChildren: './product/product.module#ProductModule',
+    },
+    {
+      path: 'device',
+      loadChildren: './device/device.module#DeviceModule',
+    },
+    {
     path: 'tables',
     loadChildren: './tables/tables.module#TablesModule',
   }, {

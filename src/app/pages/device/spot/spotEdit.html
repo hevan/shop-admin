@@ -1,0 +1,90 @@
+<div class="widgets">
+  <div class="col-lg-12 col-sm-12 col-12">
+    <nb-card  >
+      <nb-card-body>
+      <form [formGroup]="editForm" (ngSubmit)="onSubmit(editForm.value)" class="form-horizontal">
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="idCode" class="control-label">编码</label>
+              <div class="input-group">
+                <input [formControl]="spotNo" type="text" class="form-control" id="idspotNo" placeholder="编号">
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="idName" class="control-label">名称</label>
+              <div class="input-group">
+                <input [formControl]="name" type="text" class="form-control" id="idName" placeholder="名称">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="form-group">
+              <label for="idchannelCount" class="control-label">货道数</label>
+              <div class="input-group">
+                <input [formControl]="channelCount" type="text" class="form-control" id="idchannelCount" placeholder="货道数">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="idCity" class=" control-label">城市</label>
+              <div class="input-group">
+                <input [formControl]="city" type="text" class="form-control" id="idCity">
+              </div>
+            </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="idAddress" class="control-label">详细地址</label>
+                <div class="input-group">
+                  <input [formControl]="address" type="text" class="form-control" id="idAddress">
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="idDistrict" class=" control-label">附近商圈</label>
+              <div class="input-group">
+                <input [formControl]="district" type="text" class="form-control" id="idDistrict">
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="idlongitude" class="control-label">经度</label>
+              <div class="input-group">
+                <input [formControl]="longitude" type="text" class="form-control" id="idlongitude">
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="idlatitude" class="control-label">纬度</label>
+              <div class="input-group">
+                <input [formControl]="latitude" type="text" class="form-control" id="idlatitude">
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="row">
+            <p>{{msg}}</p>
+          </div>
+            <div class="form-group">
+              <div class="offset-sm-5">
+                <button type="button" [disabled]="!editForm.valid" (click)="onSubmit(editForm.value)" class="btn  btn-warning">保存</button>
+                <button type="button" (click)="toBack()" class="btn  btn-warning">返回</button>
+              </div>
+            </div>
+      </form>
+        </nb-card-body>
+    </nb-card>
+  </div>
+</div>

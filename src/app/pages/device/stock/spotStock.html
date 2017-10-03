@@ -1,0 +1,57 @@
+
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 col-12">
+      <nb-card  >
+        <nb-card-body>
+
+
+          <div class="col-4">
+            <div class="form-group">
+              <label for="idSpotNo">网点编号</label>
+              <input type="text" [(ngModel)]="spotNo" id="idSpotNo" class="form-control">
+            </div>
+          </div>
+
+      <div class="row">
+        <div class="offset-5">
+          <button type="button" (click)="loadData()"  class="btn btn-warning" >查询</button>
+        </div>
+      </div>
+
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 col-12">
+              <ngx-datatable
+                class="material"
+                [columnMode]="'force'"
+                [headerHeight]="50"
+                [footerHeight]="50"
+                [rowHeight]="'auto'"
+                [rows]="rows"
+                [externalPaging]="true"
+                [count]="pageNav.totalElements"
+                [offset]="pageNav.page"
+                [limit]="pageNav.itemsPerPage"
+                (page)='setPage($event)'
+                [scrollbarH]="true">
+                <ngx-datatable-column name="id" [width]="30" prop="id"></ngx-datatable-column>
+
+                <ngx-datatable-column name="网点编号" [width]="200" prop="spotNo"></ngx-datatable-column>
+
+                <ngx-datatable-column name="货道号" [width]="200" prop="deviceChannel.channelNo"></ngx-datatable-column>
+
+                <ngx-datatable-column name="需配货量" [width]="100" prop="mustCount"></ngx-datatable-column>
+
+                <ngx-datatable-column name="当前库存" [width]="100" prop="stockCount"></ngx-datatable-column>
+
+              </ngx-datatable>
+
+            </div>
+          </div>
+          </nb-card-body>
+    </nb-card>
+        </div>
+  </div>
+
+
+
+

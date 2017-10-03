@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-lg-12 col-sm-12 col-12">
+    <ngx-datatable
+      class="material"
+      [columnMode]="'force'"
+      [headerHeight]="50"
+      [footerHeight]="50"
+      [rowHeight]="'auto'"
+      [rows]="rows"
+      [externalPaging]="true"
+      [count]="pageNav.totalElements"
+      [offset]="pageNav.page"
+      [limit]="pageNav.itemsPerPage"
+      (page)='setPage($event)'
+      [scrollbarH]="true">
+      <ngx-datatable-column name="id" [width]="30" prop="id"></ngx-datatable-column>
+
+      <ngx-datatable-column name="货道号" [width]="200" prop="deviceChannel.channelNo"></ngx-datatable-column>
+
+      <ngx-datatable-column name="产品编号" [width]="200" prop="product.productNo"></ngx-datatable-column>
+
+      <ngx-datatable-column name="产品名称" [width]="100" prop="product.name"></ngx-datatable-column>
+
+      <ngx-datatable-column name="配货数量" [width]="100" prop="productCount"></ngx-datatable-column>
+
+      <ngx-datatable-column name="配货时间" [width]="150" prop="deliveryDate"></ngx-datatable-column>
+
+      <ngx-datatable-column name="操作" [width]="150" [flexGrow]="1" prop="id">
+        <ng-template let-value="value" ngx-datatable-cell-template>
+          <button (click)="toDelete(value)" class="btn btn-warning">删除</button>
+        </ng-template>
+      </ngx-datatable-column>
+
+    </ngx-datatable>
+
+  </div>
+</div>

@@ -17,33 +17,33 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
-import {AuthService} from "./services/auth.service";
-import {AuthorityService} from "./services/check/authority.service";
-import {CanActivateGuard} from "./services/guard.service";
-import {UserService} from "./services/user.service";
-import {CategoryService} from "./services/blog/category.service";
-import {BlogService} from "./services/blog/blog.service";
+import {AuthService} from './services/auth.service';
+import {AuthorityService} from './services/check/authority.service';
+import {CanActivateGuard} from './services/guard.service';
+import {UserService} from './services/user.service';
+import {CategoryService} from './services/blog/category.service';
+import {BlogService} from './services/blog/blog.service';
 
-import {CorpService} from "./services/corp/corp.service";
-import {AdsPosService} from "./services/ads/adsPos.service";
-import {AdsLinkService} from "./services/ads/adsLink.service";
-import {ModuleService} from "./services/check/module.service";
-import {AuthModuleService} from "./services/check/authModule.service";
-import {CorpCustomerService} from "./services/corp/corpCustomer.service";
-import {CorpManageRoleService} from "./services/corp/corpManageRole.service";
-import {SysThirdService} from "./services/third/third.service";
+import {CorpService} from './services/corp/corp.service';
+import {AdsPosService} from './services/ads/adsPos.service';
+import {AdsLinkService} from './services/ads/adsLink.service';
+import {ModuleService} from './services/check/module.service';
+import {AuthModuleService} from './services/check/authModule.service';
+import {CorpCustomerService} from './services/corp/corpCustomer.service';
+import {CorpManageRoleService} from './services/corp/corpManageRole.service';
+import {SysThirdService} from './services/third/third.service';
 
-import {CorpManageService} from "./services/corp/corpManage.service";
-import {CorpManageModuleService} from "./services/corp/corpManageModule.service";
-import {BusiTypeService} from "./services/corp/busiType.service";
-import {ProductService} from "./services/merch/prodcut.service";
-import {ProductCategoryService} from "./services/merch/prodcutCategory.service";
-import {SpotService} from "./services/device/spot.service";
-import {SpotStockDetail} from "./pages/device/stock/spotStockDetail.component";
-import {SpotStockService} from "./services/device/spotStock.service";
-import {SpotDeliveryService} from "./services/device/spotDelivery.service";
-import {SpotChannelService} from "./services/device/spotChannel.service";
-import {SpotDeliveryProductService} from "./services/device/spotDeliveryProduct.service";
+import {CorpManageService} from './services/corp/corpManage.service';
+import {CorpManageModuleService} from './services/corp/corpManageModule.service';
+import {BusiTypeService} from './services/corp/busiType.service';
+import {ProductService} from './services/merch/prodcut.service';
+import {ProductCategoryService} from './services/merch/prodcutCategory.service';
+import {SpotService} from './services/device/spot.service';
+import {SpotStockDetail} from './pages/device/stock/spotStockDetail.component';
+import {SpotStockService} from './services/device/spotStock.service';
+import {SpotDeliveryService} from './services/device/spotDelivery.service';
+import {SpotChannelService} from './services/device/spotChannel.service';
+import {SpotDeliveryProductService} from './services/device/spotDeliveryProduct.service';
 
 
 const APP_CUST_PROVIDERS = [

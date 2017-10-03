@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {ProductComponent} from "./product.component";
-import {ProductCategoryQuery} from "./category/productCategory.component";
-import {ProductCategoryEdit} from "./category/productCategoryEdit.component";
-import {ProductQuery} from "./product-manage/productQuery.component";
-import {ProductEdit} from "./product-manage/productEdit.component";
+import {ProductComponent} from './product.component';
+import {ProductCategoryQuery} from './category/productCategory.component';
+import {ProductCategoryEdit} from './category/productCategoryEdit.component';
+import {ProductQuery} from './product-manage/productQuery.component';
+import {ProductEdit} from './product-manage/productEdit.component';
 
 
 // noinspection TypeScriptValidateTypes

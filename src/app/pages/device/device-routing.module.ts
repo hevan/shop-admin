@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {DeviceComponent} from "./device.component";
-import {SpotStockQuery} from "./stock/spotStock.component";
-import {DeliveryQuery} from "./delivery/delivery.component";
-import {DeliveryEdit} from "./delivery/deliveryEdit.component";
-import {DeliveryView} from "./delivery/deliveryView.component";
-import {SpotQuery} from "./spot/spot.component";
-import {SpotEdit} from "./spot/spotEdit.component";
-import {DeliveryProductDetail} from "./delivery/deliveryProductDetail.component";
-import {SpotStockDetail} from "./stock/spotStockDetail.component";
-import {DeliveryProductComponent} from "./delivery/deliveryProduct.component";
-import {SpotStockProductComponent} from "./stock/spotStockProduct.component";
-import {SpotView} from "./spot/spotView.component";
-import {SpotChannelQuery} from "./spot/spotChannel.component";
-import {SpotChannelEditComponent} from "./spot/spotChannelEdit.component";
+import {DeviceComponent} from './device.component';
+import {SpotStockQuery} from './stock/spotStock.component';
+import {DeliveryQuery} from './delivery/delivery.component';
+import {DeliveryEdit} from './delivery/deliveryEdit.component';
+import {DeliveryView} from './delivery/deliveryView.component';
+import {SpotQuery} from './spot/spot.component';
+import {SpotEdit} from './spot/spotEdit.component';
+import {DeliveryProductDetail} from './delivery/deliveryProductDetail.component';
+import {SpotStockDetail} from './stock/spotStockDetail.component';
+import {DeliveryProductComponent} from './delivery/deliveryProduct.component';
+import {SpotStockProductComponent} from './stock/spotStockProduct.component';
+import {SpotView} from './spot/spotView.component';
+import {SpotChannelQuery} from './spot/spotChannel.component';
+import {SpotChannelEditComponent} from './spot/spotChannelEdit.component';
 
 
 // noinspection TypeScriptValidateTypes

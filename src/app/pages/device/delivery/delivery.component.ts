@@ -31,6 +31,8 @@ export class DeliveryQuery implements OnInit{
   public startDate:NgbDateStruct;
   public endDate:NgbDateStruct;
 
+  public listCorp = [];
+
   public constructor(fb:FormBuilder,private router: Router,private spotDeliveryService:SpotDeliveryService) {
 
     this.searchForm = fb.group({

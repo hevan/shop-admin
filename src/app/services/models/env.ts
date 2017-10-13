@@ -79,10 +79,10 @@ export class Keys {
   static KEY_TOKEN:string = "term_token";
   static KEY_USER_INFO:string = "term_user_info";
   static KEY_USER:string = "term_user";  
-  static SERVER_URL:string = 'http://localhost:8080/term-sale'; 
+  static SERVER_URL:string = 'http://139.129.202.208/term-sale'; 
   //static SERVER_URL:string = 'http://139.129.202.208:9085/labour';
   //static SERVER_URL:string = 'http://120.78.80.186:81/labour'; 
-  static SERVER_UPLOAD_URL: string = 'http://localhost:8080/term-sale'; 
+  static SERVER_UPLOAD_URL: string = 'http://139.129.202.208/term-sale'; 
   //static SERVER_UPLOAD_URL: string = 'http://139.129.202.208:9085/labour'; 
   //static SERVER_UPLOAD_URL: string = 'http://120.78.80.186:81/labour';
  } 

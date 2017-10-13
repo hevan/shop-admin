@@ -10,12 +10,6 @@ const routes: Routes = [{
   children: [{
     path: 'dashboard',
     component: DashboardComponent,
-  },  {
-    path: 'components',
-    loadChildren: './components/components.module#ComponentsModule',
-  }, {
-    path: 'forms',
-    loadChildren: './forms/forms.module#FormsModule',
   },
     {
       path: 'lacom',
@@ -29,10 +23,7 @@ const routes: Routes = [{
       path: 'device',
       loadChildren: './device/device.module#DeviceModule',
     },
-    {
-    path: 'tables',
-    loadChildren: './tables/tables.module#TablesModule',
-  }, {
+     {
     path: '',
     redirectTo: 'dashboard',
     pathMatch: 'full',

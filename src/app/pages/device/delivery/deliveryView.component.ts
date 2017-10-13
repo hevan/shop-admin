@@ -48,5 +48,9 @@ export class DeliveryView implements OnInit{
 
   }
 
+  public toBack():any {
+    this.router.navigate(['/pages/device/deliveryquery']);
+  }
+
 
 }
